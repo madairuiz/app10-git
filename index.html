@@ -1,0 +1,615 @@
+<!doctype html>
+<html>
+<head>
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine2/style.css" />
+<script type="text/javascript" src="engine2/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+
+<meta charset="utf-8">
+<title> APP10 Base de datos simples y avanzadas </title>
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema10.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+
+<!--grupo JavaScript -->
+<script src="js/jquery-1.11.2.min.js"> </script>
+<script src="js/jquery.mobile-1.4.5.min.js"> </script>
+<!-- <script src="js/accion.js" type="text/javascript"></script> -->
+
+<script src="phonegap.js"></script> <!--necesario*/ -->
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+<body onLoad="MM_preloadImages('imagenes/archivo/s3.jpg','imagenes/archivo/s4.jpg','imagenes/bdoo2.jpg','imagenes/red2.gif','imagenes/archivo/a7.jpg','imagenes/archivo/s8.jpg')" >
+    <div data-role="page" id="Principal" data-theme="b">
+      <div data-role="header" data-add-back-btn="true"    data-back-btn-text="Regresar" data-back-btn-theme="b">
+        <h1> <font size="+2"> Base de datos simples y avanzadas </font> </h1>
+      </div>
+
+<div data-role="main" class="ui-content" >
+   <div data-role="collapsible" data-content-theme="false">
+     <h1> BASE DE DATOS SIMPLES </h1>
+       <div>
+      <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container2">
+<div class="ws_images"><ul>
+		<li><img src="data2/images/s1.jpg" alt="s1" title="s1" id="wows2_0"/></li>
+		<li><img src="data2/images/s2.jpg" alt="s2" title="s2" id="wows2_1"/></li>
+		<li><img src="data2/images/s3.jpg" alt="s3" title="s3" id="wows2_2"/></li>
+		<li><img src="data2/images/s4.jpg" alt="s4" title="s4" id="wows2_3"/></li>
+		<li><img src="data2/images/s5.jpg" alt="s5" title="s5" id="wows2_4"/></li>
+		<li><img src="data2/images/s6.jpg" alt="s6" title="s6" id="wows2_5"/></li>
+		<li><a href="http://wowslider.net"><img src="data2/images/s7.png" alt="jquery slider" title="s7" id="wows2_6"/></a></li>
+		<li><img src="data2/images/s8.jpg" alt="s8" title="s8" id="wows2_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="s1"><span><img src="data2/tooltips/s1.jpg" alt="s1"/>1</span></a>
+		<a href="#" title="s2"><span><img src="data2/tooltips/s2.jpg" alt="s2"/>2</span></a>
+		<a href="#" title="s3"><span><img src="data2/tooltips/s3.jpg" alt="s3"/>3</span></a>
+		<a href="#" title="s4"><span><img src="data2/tooltips/s4.jpg" alt="s4"/>4</span></a>
+		<a href="#" title="s5"><span><img src="data2/tooltips/s5.jpg" alt="s5"/>5</span></a>
+		<a href="#" title="s6"><span><img src="data2/tooltips/s6.jpg" alt="s6"/>6</span></a>
+		<a href="#" title="s7"><span><img src="data2/tooltips/s7.png" alt="s7"/>7</span></a>
+		<a href="#" title="s8"><span><img src="data2/tooltips/s8.jpg" alt="s8"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wowslider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine2/wowslider.js"></script>
+<script type="text/javascript" src="engine2/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+       </div>
+    </div>
+</div>
+<div>
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b" >
+   <li class="ui-first-child">
+    <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>  Definición de base de datos </h2>
+     
+    </a>
+   </li>
+   <li class ="ui-first-child ui-last-child">
+    <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r"> 
+       <h2> Modelo entidad-relación </h2>
+     
+     </a>
+   </li>
+   <li class ="ui-first-child ui-last-child">
+    <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r"> 
+       <h2> Tipos de Campos </h2>
+      
+    </a>
+   </li>
+   <li class ="ui-first-child ui-last-child">
+    <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r"> 
+       <h2> Tipos de Relaciones </h2>
+      
+    </a>
+   </li>
+   <li class ="ui-first-child ui-last-child">
+    <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r"> 
+       <h2> Access </h2>
+      
+    </a>
+   </li>
+ </ul>
+ 
+</div>
+
+
+
+
+<div data-role="main" class="ui-content" >
+   <div data-role="collapsible" data-content-theme="false">
+     <h1>  BASE DE DATOS AVANZADAS </h1>
+     <div>
+     <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/a1.jpg" alt="a1" title="a1" id="wows1_0"/></li>
+		<li><img src="data1/images/a2.jpg" alt="a2" title="a2" id="wows1_1"/></li>
+		<li><img src="data1/images/a3.jpg" alt="a3" title="a3" id="wows1_2"/></li>
+		<li><img src="data1/images/a4.png" alt="a4" title="a4" id="wows1_3"/></li>
+		<li><img src="data1/images/a5.png" alt="a5" title="a5" id="wows1_4"/></li>
+		<li><img src="data1/images/a6.jpg" alt="a6" title="a6" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/a7.jpg" alt="http://wowslider.com/" title="a7" id="wows1_6"/></a></li>
+		<li><img src="data1/images/a8.jpg" alt="a8" title="a8" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="a1"><span><img src="data1/tooltips/a1.jpg" alt="a1"/>1</span></a>
+		<a href="#" title="a2"><span><img src="data1/tooltips/a2.jpg" alt="a2"/>2</span></a>
+		<a href="#" title="a3"><span><img src="data1/tooltips/a3.jpg" alt="a3"/>3</span></a>
+		<a href="#" title="a4"><span><img src="data1/tooltips/a4.png" alt="a4"/>4</span></a>
+		<a href="#" title="a5"><span><img src="data1/tooltips/a5.png" alt="a5"/>5</span></a>
+		<a href="#" title="a6"><span><img src="data1/tooltips/a6.jpg" alt="a6"/>6</span></a>
+		<a href="#" title="a7"><span><img src="data1/tooltips/a7.jpg" alt="a7"/>7</span></a>
+		<a href="#" title="a8"><span><img src="data1/tooltips/a8.jpg" alt="a8"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wowslider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+     </div>
+   </div>
+</div>
+
+
+<div>
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b" >
+   <li class="ui-first-child">
+    <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>  Formas Normales </h2>
+     
+    </a>
+   </li>
+   <li class ="ui-first-child ui-last-child">
+    <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r"> 
+       <h2> Modelos de bases de datos </h2>
+     
+     </a>
+   </li>
+   <li class ="ui-first-child ui-last-child">
+    <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r"> 
+       <h2> Base de datos orientada a objetos </h2>
+      
+    </a>
+   </li>
+   <li class ="ui-first-child ui-last-child">
+    <a href="#Pagina9" class="ui-btn ui-btn-icon-right ui-icon-carat-r"> 
+       <h2> Bases de datos en red </h2>
+      
+    </a>
+   </li>
+   <li class ="ui-first-child ui-last-child">
+    <a href="#Pagina10" class="ui-btn ui-btn-icon-right ui-icon-carat-r"> 
+       <h2> SQL </h2>
+      
+    </a>
+   </li>
+ </ul>
+ 
+ </div>
+
+
+<div data-role="main" class="ui-content" >
+   <div data-role="collapsible" data-content-theme="false">
+     <h1> DATOS DEL DESAROLLADOR </h1>
+       <div align="center" style=" background-color:#C9C;" >
+          <br> <h2> Alumno: </h2> <P> Ruiz Garcia Madai </P>
+          <h2> Semestre: </h2> <P> 4º  </P>
+          <h2> Grupo: </h2> <P> "G" </P>
+          <h2> Submodulo: </h2> <P> Dasarolla Aplicaciones Móviles </P>
+          <h2> Docente: </h2> <P> LIC. Jóse Antonio Gómez Hernández </P><br>
+       </div>
+   </div>
+</div>
+
+       
+       
+       
+       
+  <div data-role="footer" align="center"  data-theme="b" data-position="fixed">
+      <div>
+         <img src="res/android/mdpi10.png" width="46" height="46">
+      </div>
+      <div>
+         <h4> Aplicación 10 </h4>
+         <h4> Ruiz Garcia Madai </h4>
+      </div>   
+      </div>
+</div>
+ 
+ <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+    <div data-role="header" data-add-back-btn="true"  data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1> <font size="+2"> Definición de base de datos </font> </h1>
+    </div>
+      <div data-role="content" align="center">
+        <div> 
+        <P> El término de bases de datos fue escuchado por primera vez en 1963, en un simposio celebrado en california –USA.Una base de datos se puede definir como un conjunto de información            relacionada que se encuentra agrupada ó estructurada.Desde el punto de vista de  la informática, la base de datos es un sistema formado por un conjunto de datos almacenados en discos que            permiten el acceso directo a ellos y un conjunto de programas que manipulen ese conjunto de datos.</P>
+        <p> Este trabajo se realizara con la finalidad de aprender un poco más sobre una base de datos, sus características, usos, estructuras, diseños, entre otros.Una base de datos tiene mucha            importancia en el ritmo de vida que llevamos en los actuales momentos, ya que, está acelera el ritmo en el momento realizar una búsqueda de información.Base de Datos, es la colección de            datos aparentes usados por el sistema de aplicaciones de una determinada empresa. </p>
+        <p> Base de Datos, es un conjunto de información relacionada que se encuentra agrupada o estructurada. Un archivo por sí mismo no constituye una base de datos, sino más bien la forma en que            está organizada la información es la que da origen a la base de datos.Base de Datos, colección de datos organizada para dar servicio a muchas aplicaciones al mismo tiempo al combinar los            datos de manera que aparezcan estar en una sola ubicaciónRequerimientos de las bases de datos:El análisis de requerimientos para una base de datos incorpora las mismas tareas que el            análisis de requerimientos del software.  </p>
+        <p> Es necesario un contacto estrecho con el cliente; es esencial la identificación de las funciones e interfaces; se requiere la especificación del flujo, estructura y asociatividad de la            información y debe desarrollarse un documento formal de los requerimientos.Requerimientos administrativos: se requiere mucho más para el desarrollo de sistemas de bases de datos que            únicamente seleccionan un modelo lógico de base de datos. La bases de datos es una disciplina organizacional, un método, más que una herramienta o una tecnología. Requiere de un cambio            conceptual y organizacional. </p>
+        <br> 
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','imagenes/archivo/s8.jpg',1)"><img src="imagenes/archivo/s2.jpg" width="248" height="203" id="Image6"></a> </div>  
+     </div>     
+     <div data-role="footer" align="center"  data-theme="b" data-position="fixed">
+         <div> 
+              <img src="res/android/mdpi10.png" width="46" height="46">
+         </div>
+           <h4> Aplicación 10, RGM </h4>
+          
+         </div>   
+      </div>
+      
+      <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+         <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1> <font size="+2"> Modelo entidad-relación </font> </h1>
+         </div>
+         <div data-role="content" align="center" >
+             <div>
+               <p> Los diagramas o modelos entidad-relación (denominado por su siglas, ERD “Diagram                    Entity relationship”) son una herramienta para el modelado de datos de un sistema de                    información. Estos modelos expresan entidades relevantes para un sistema de                    información, sus inter-relaciones y propiedades. </p>
+               
+               <h2> <font size="+2" color="#00FFFF"> Elementos del modelo entidad-relación </font> </h2>
+               <br> <h2> <li> Entidad </li> </h2>
+               <p> Se trata de un objeto del que se recoge información de interés de cara a la base de                   datos. Gráficamente se representan mediante un rectángulo. Un ejemplo seria la                   entidad banco, donde se recogerían los datos relativos a ese banco, como puede ser                    el nombre, el número de sucursal, la dirección, etc.  </p>
+               <p> Dentro de las entidades pueden ser fuertes o débiles. Las fuertes son las que no                    dependen de otras entidades para existir, mientras que las entidades débiles siempre                    dependen de otra entidad sino no tienen sentido por ellas mismas. </p>
+               <br> <h2> <li> Relación </li> </h2>
+               <p> Podemos definir la relación como una asociación de dos o más entidades. A cada                   relación se le asigna un nombre para poder distinguirla de las demás y saber su                   función dentro del modelo entidad-relación. Otra característica es el grado de                   relación, siendo las de grado 1 relaciones que solo relacionan una entidad consigo                   misma. Las de grado 2 son relaciones que asocian dos entidades distintas, y las de                   grado n que se tratan de relaciones que unen mas de dos entidades. </p>
+                <br> <h2> <li> Atributo  </li> </h2>
+               <p> Se define como cada una de las propiedades de una entidad o relación. Cada atributo                    tiene un nombre y todos los posibles valores que puede tener. Dentro de una entidad                    tiene que haber un atributo principal que identifica a la entidad y su valor tiene                    que ser único. Un ejemplo de atributo principal seria el dni dentro de la entidad                    persona.  </p>
+               <br> <h2> <li> Llave Primaria  </li> </h2>
+               <p> Se le llama clave primaria a un campo que identifica de forma unica a cada fila de una tabla. Una clave primaria comprende de esta manera una columna o un conjunto de columnas. No peueden haber dos filas en una tabla que tenga la misma clave primaria </p>
+               <p> Una clave primaria debe identifecar univocamente todas las posibles filas que se encuentran en un momento determinado. Ejemplos de estos son: el curp, el codigo opstal,etc. </p>
+               <br> 
+               <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','imagenes/archivo/s3.jpg',1)"><img src="imagenes/archivo/s7.png" width="310" height="163" id="Image1"></a>
+              
+                             
+            
+             </div>
+          </div>
+
+<div data-role="footer" align="center"  data-theme="b" data-position="fixed">
+             <div> 
+                 <img src="res/android/mdpi10.png" width="46" height="46">
+             </div>
+                <h4> Aplicación 10, RGM </h4>
+               
+             </div>   
+            </div>  
+            
+      <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+         <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1> <font size="+2"> Tipos de Campos </font> </h1>
+         </div>
+         <div data-role="content" align="center">
+             <div>
+               <p> Cada Sistema de Base de Datos posee tipos de campos que pueden ser similares o                   diferentes. Entre los más comunes podemos nombrar: </p>
+               <br> <h2> <li> Numérico:  </li> </h2>
+               <p> Entre los diferentes tipos de campos numéricos podemos encontrar enteros “sin                   decimales” y reales “decimales”. </p>
+                <br> <h2> <li> Booleanos: </li> </h2>
+               <p> Poseen dos estados: Verdadero “Si” y Falso “No”. </p>
+               <br> <h2> <li> Memos: </li> </h2>
+               <p> Son campos alfanuméricos de longitud ilimitada. Presentan el inconveniente de no                    poder ser indexados. </p> 
+               <br> <h2> <li> Fechas: </li> </h2>
+               <p> Almacenan fechas facilitando posteriormente su explotación. Almacenar fechas de esta                   forma posibilita ordenar los registros por fechas o calcular los días entre una                    fecha y otra. </p>
+               <br> <h2> <li> Alfanuméricos:  </li> </h2>
+               <p> Contienen cifras y letras. Presentan una longitud limitada (255 caracteres). </p> 
+               <br> <h2> <li> Autoincrementables: </li> </h2>
+               <p> Son campos numéricos enteros que incrementan en una unidad su valor para cada                   registro incorporado. Su utilidad resulta: Servir de identificador ya que resultan                   exclusivos de un registro. </p>  
+               <br> <img src="imagenes/double.gif"  height="60%" width="50%"> 
+             </div>
+          </div>
+
+          <div data-role="footer" align="center"  data-theme="b" data-position="fixed">
+             <div> 
+                  <img src="res/android/mdpi10.png" width="46" height="46">
+             </div>
+                <h4> Aplicación 10, RGM </h4>
+               
+             </div>   
+            </div>
+            
+            
+         <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+         <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1> <font size="+2"> Tipos de Relaciones </font> </h1>
+         </div>
+         <div data-role="content" align="center">
+             <div>
+                 <br> <h2> <li> Relaciones de uno a uno: </li> </h2>
+                 <p> Cuando un registro de una entidad solo puede estar relacionado con un unico atributo de la otra entidad y viceversa </p> 
+                 <br> <img src="imagenes/1a1.JPG" height="60%" width="50%"> 
+                 <br> <h2> <li> Relaciones de uno a muchos: </li> </h2> 
+                 <p>  Es  cuando un atributo de una entidad solo puede estar relacionado con con un unico atributo de la otra entidad, y un atributo de la entidad principal puede tener mas de un atributo relacionado el la entidad secundaria. </p>
+                 <br> <img src="imagenes/1aM.JPG" height="60%" width="50%"> 
+                 <br> <h2> <li> Relaciones de muchos a muchos: </li> </h2> 
+                 <p> Es cuando un atributo de una entidad puede estar relacionado con muchas de un atributo de la otra entidad y viceversa. En este caso las entidades NO PUEDEN estar directamente relacionadas se tiene que añadir una entidad entre las dos, la cual se conoce como entidad debil, de vinculación o e relación, que incluya los pares de valores relacionados entre si, las cuales son las llaves primarias de ambas</p> 
+                 <br> <img src="imagenes/MaM.gif" height="60%" width="50%"> 
+            </div>
+            </div>
+
+          <div data-role="footer" align="center"  data-theme="b" data-position="fixed">
+             <div> 
+                 <img src="res/android/mdpi10.png" width="46" height="46">
+             </div>
+                <h4> Aplicación 10, RGM </h4>
+               
+             </div>    
+            </div> 
+            
+            
+       <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+         <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1> <font size="+2"> Access </font> </h1>
+         </div>
+         <div data-role="content" align="center">
+             <div>
+                <p> Es una base de datos desarrollada por Microsoft. Esta base de datos, debe ser creada                     bajo el programa access, el cual crea un archivo .mdb </p>
+                 <br> <h2> <li> Objetos de la base de datos </li> </h2> 
+               <p>  <font size="+2">  Tablas: </font> unidad donde crearemos el conjunto de datos de nuestra base de datos. Estos datos estarán ordenados en columnas verticales. Aquí definiremos los campos y sus características. Más adelante veremos qué es un campo.  </p>
+              <p>  <font size="+2">  Consultas: </font> aquí definiremos las preguntas que formularemos a la base de datos con el fin de extraer y presentar la información resultante de diferentes formas (pantalla, impresora...)  </p>
+              <p>  <font size="+2">  Formulario: </font> elemento en forma de ficha que permite la gestión de los datos de una forma más cómoda y visiblemente más atractiva. </p>
+              <p>  <font size="+2">  Informe: </font> permite preparar los registros de la base de datos de forma personalizada para imprimirlos. </p>
+              <p>  <font size="+2">  Macro:  </font> conjunto de instrucciones que se pueden almacenar para automatizar tareas repetitivas. </p>
+              <p>  <font size="+2"> Módulo: </font> programa o conjunto de instrucciones en lenguaje Visual Basic </p>
+                <br> <h2> <li> ¿Cómo crear una tabla? </li> </h2>
+                <p> Para crear una tabla se selecciona la pestaña y se pulsa el botón Nuevo, aparecerá   la siguiente ventana:
+
+Estas son las diferentes opciones que presenta Access para crear una tabla:</p>
+                <p>  <font size="+2"> 1. Vista Hoja de datos: </font> crea una nueva tabla con formato de tabla. En la primera fila de la tabla aparecen los campos: Campo 1, Campo 2… sobre los cuales se escriben los nombres de los campos. </p>
+               <p>  <font size="+2"> 2. Vista Diseño: </font> permite crear los campos manualmente y configurar el diseño de la tabla. </p>
+               <p>  <font size="+2"> 3. Asistente para tablas: </font> el asistente pide las características de los campos y de la tabla y la genera automáticamente. </p>
+              <p>  <font size="+2">4. Importar tabla: </font> esta opción permite importar datos de otra base de datos, que no necesariamente tiene que estar creada por Access.</p>
+              <p>  <font size="+2">5. Vincular tabla: </font> crea vínculos entre las tablas importadas y las originales, las modificaciones que se efectúen en los datos se transmiten a aquéllas. </p>
+              
+              <br> 
+             <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','imagenes/archivo/s4.jpg',1)"><img src="imagenes/archivo/s1.jpg" width="300" height="168" id="Image2"></a> </div>                     
+          </div>
+          
+          
+          
+  <div data-role="main" class="ui-content" >
+   <div data-role="collapsible" data-content-theme="false">
+     <h1> Mas sobre access </h1>
+     <div> 
+           <div data-role="main" class="ui-content" align="center">
+              <div style= "width:40%;">
+                <ul data-role="controlgroup" data-type="vertical" data-theme="b" >
+                  <li class="ui-first-child ui-last-child">
+                    <a href="https://support.office.com/es-es/article/informaci%C3%B3n-sobre-la-estructura-de-una-base-de-datos-de-access-001a5c05-3fea-48f1-90a0-cccaa57ba4af" data-role="button">
+                       <h2>  Estructura de access </h2>
+                    </a>
+                  </li> 
+                  <li lass="ui-first-child ui-last-child"> 
+                   <a href="https://www.lawebdelprogramador.com/cursos/Access/index1.html" data-role="button">
+                     <h2> Bases de datos. Access 2010 </h2>
+                    </a>
+               </li>
+               <li lass="ui-first-child ui-last-child"> 
+                   <a href="https://msdn.microsoft.com/es-es/library/office/ff402351(v=office.14).aspx" data-role="button">
+                     <h2> Crear BD con Access 2010 </h2>
+                    </a>
+               </li>
+             </ul>
+          </div>
+          </div> 
+        </div>
+    </div>
+</div> 
+
+          <div data-role="footer" align="center"  data-theme="b" data-position="fixed">
+             <div> 
+                 <img src="res/android/mdpi10.png" width="46" height="46">
+             </div>
+                <h4> Aplicación 10, RGM </h4>
+              
+             </div>   
+            </div>     
+            
+            
+            
+            
+            <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="b">
+    <div data-role="header" data-add-back-btn="true"  data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1> <font size="+2"> Formas Normales </font> </h1>
+    </div>
+      <div data-role="content" align="center">
+        <div>
+             <br> <h2> <li> Primera forma normal, 1FN </li> </h2>
+             <p> Todos los atributos son atómicos. Un atributo es atómico si los elementos del dominio son indivisibles, mínimos. La tabla contiene una clave primaria única. La clave primaria no contiene atributos nulos. No debe existir variación en el número de columnas. Los Campos no clave deben identificarse por la clave (Dependencia Funcional)
+Debe Existir una independencia del orden tanto de las filas como de las columnas, es decir, si los datos cambian de orden no deben cambiar sus significados. Una tabla no puede tener múltiples valores en cada columna. Los datos son atómicos (a cada valor de X le pertenece un valor de Y y viceversa). </p>
+<p> Esta forma normal elimina los valores repetidos dentro de una BD </p>
+             <br> <h2> <li> Segunda forma normal, 2FN </li> </h2>
+             <p> Dependencia Funcional. Una relación está en 2FN si está en 1FN y si los atributos que no forman parte de ninguna clave dependen de forma completa de la clave principal. Es decir que no existen dependencias parciales. (Todos los atributos que no son clave principal deben depender únicamente de la clave principal). </p>
+             <p> En otras palabras podríamos decir que la segunda forma normal está basada en el concepto de dependencia completamente funcional. Una dependencia funcional  es completamente funcional si al eliminar los atributos A de X significa que la dependencia no es mantenida, esto es que  . Una dependencia funcional  es una dependencia parcial si hay algunos atributos  que pueden ser eliminados de X y la dependencia todavía se mantiene, esto es  </p>
+             <br> <h2> <li> Tercera forma normal, 3FN </li> </h2>
+             <p> La tabla se encuentra en 3FN si es 2FN y si no existe ninguna dependencia funcional transitiva entre los atributos que no son clave. Un ejemplo de este concepto sería que, una dependencia funcional X->Y en un esquema de relación R es una dependencia transitiva si hay un conjunto de atributos Z que no es un subconjunto de alguna clave de R, donde se mantiene X->Z y Z->Y. </p>
+             <br> <h2> <li> Forma normal de Boyce-Codd, BCNF </li> </h2>
+             <p> La tabla se encuentra en FNBC si cada determinante, atributo que determina completamente a otro, es clave candidata. Deberá registrarse de forma anillada ante la presencia de un intervalo seguido de una formalización perpetua, es decir las variantes creadas, en una tabla no se llegaran a mostrar, si las ya planificadas, dejan de existir. Formalmente, un esquema de relación  está en FNBC, si y sólo si, para toda dependencia funcional  válida en  , se cumple que es superllave o clave. De esta forma, todo esquema  que cumple FNBC, está además en 3FN; sin embargo, no todo esquema  que cumple con 3FN, está en FNBC. </p>
+             <br> <h2> <li> Cuarta forma normal, 4FN </li> </h2>
+             <p>  Una tabla se encuentra en 4FN si, y sólo si, para cada una de sus dependencias múltiples no funcionales X->->Y, siendo X una super-clave que, X es o una clave candidata o un conjunto de claves primarias. </p>
+             <br> <h2> <li> Quinta forma normal, 5FN </li> </h2>
+             <p> Una tabla se encuentra en 5FN si: </p>
+             <p> La tabla está en 4FN
+No existen relaciones de dependencias no triviales que no siguen los criterios de las claves. Una tabla que se encuentra en la 4FN se dice que está en la 5FN si, y sólo si, cada relación de dependencia se encuentra definida por las claves candidatas. </p>
+            <br> <img src="imagenes/fn1.png" height="60%" width="50%">
+         </div>  
+     </div>     
+     <div data-role="footer" align="center"  data-theme="b" data-position="fixed">
+         <div> 
+              <img src="res/android/mdpi10.png" width="46" height="46">
+         </div>
+           <h4> Aplicación 10, RGM </h4>
+          
+         </div>   
+      </div>
+      
+      <div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="b">
+         <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1> <font size="+2"> Modelos de bases de datos </font> </h1>
+         </div>
+         <div data-role="content" align="center" >
+             <div>
+              <p> En función de la estructura utilizada para construir una base de datos, existen diversos modelos de bases de datos. El modelo de la base de datos define un paradigma de almacenamiento, estableciendo cómo se estructuran los datos y las relaciones entre estos. Las distintas operaciones sobre la base de datos (eliminación o sustitución de datos, lectura de datos, etc.) vienen condicionadas por esta estructura, y existen notables diferencias entre los principales modelos, cada uno de ellos con sus ventajas e inconvenientes particulares. Algunos de los más habituales son los siguientes: </p>
+                 <br> <h2> <li> Bases de datos jerárquicas. </li> </h2>
+                 <p> Los datos se recogen mediante una estructura basada en nodos interconectados. Cada nodo puede tener un único padre y cero, uno o varios hijos. De este modo, se crea una estructura en forma de árbol invertido en el que todos sus nodos dependen en última instancia de uno denominado raíz. Aunque potente, el modelo jerárquico presenta algunas deficiencias, principalmente la escasa independencia de sus registros (el acceso a un registro —un nodo— implica que se ha de pasar por sus padres, restando flexibilidad a la navegación por la base de datos). Otra grave deficiencia de este modelo es la mala gestión de la redundancia de datos, ya que si un registro guarda relación con dos o más, debe almacenarse varias veces, ya que no se permite que el nodo correspondiente tenga varios padres. Esto tiene consecuencias no solo en el mayor volumen de datos que se almacena, sino también en la integridad y coherencia de los datos. Si se modifica una de las «copias» de ese registro en la base de datos, deben modificarse también las restantes, ya que, aunque no conectadas en la estructura de la base de datos, realmente representan una única realidad y debieran ser idénticas entre sí. </p>
+                 <br> <h2> <li> Bases de datos en red. </li> </h2>
+                 <p> Con objeto de solucionar los problemas de redundancia de las bases de datos jerárquicas, surge el modelo en red. Este modelo permite la aparición de ciclos en la estructura de la base de datos (es decir, no ha de existir un único padre para cada nodo), lo cual permite una mayor eficacia en lo que a la redundancia de datos se refiere. Presenta, no obstante, otros problemas, siendo el más importante de ellos su gran complejidad, lo que hace difícil la administración de la base de datos. </p> 
+                  <br> <h2> <li> Bases de datos relacionales. </li> </h2>
+                 <p> Constituyen el modelo de bases de datos más utilizado en la actualidad. Solucionan los problemas asociados a las bases de datos jerárquicas y en red, utilizando para ello un esquema basado en tablas, que resulta a la vez sencillo de comprender y fácil de utilizar para el análisis y la consulta de los datos. Las tablas contienen un número dado de registros (equivalentes a las filas en la tabla), así como campos (columnas), lo que da lugar a una correcta estructuración y un acceso eficiente. </p>
+                 <br> <h2> <li> Bases de datos orientadas a objetos.  </li> </h2>
+                 <p> Se trata de uno de los modelos más actuales, derivado directamente de los paradigmas de la programación orientada a objetos. El modelo extiende las capacidades de las bases de datos relacionales, de tal modo que estas pueden contener objetos, permitiendo así una integración más fácil con la propia arquitectura de los programas empleados para el manejo de la base de datos, en caso de que estos hayan sido desarrollados mediante programación orientada a objetos. Su popularidad crece de forma notable en ciertas áreas en las cuales resultan más ventajosas que el modelo relacional, siendo los SIG una de ellas. </p>
+                
+               <br> <img src="imagenes/ComparacionModelos.png" width="400" height="300">
+               
+             </div>
+          </div>
+        
+
+<div data-role="footer" align="center"  data-theme="b" data-position="fixed">
+             <div> 
+                 <img src="res/android/mdpi10.png" width="46" height="46">
+             </div>
+                <h4> Aplicación 10, RGM </h4>
+               
+             </div>   
+            </div>
+             
+            
+      <div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="b">
+         <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1> <font size="+2"> Base de datos orientada a objetos </font> </h1>
+         </div>
+         <div data-role="content" align="center">
+             <div>
+                <p> se propusieron con la idea de satisfacer las necesidades de las aplicaciones más complejas. El enfoque orientado a objetos ofrece la flexibilidad para cumplir con algunos de estos requerimientos sin estar limitado por los tipos de datos y los lenguajes de consulta disponibles en los sistemas de bases de datos tradicionales. </p>
+                <p> Una base de datos orientada a objetos es una base de datos que incorpora todos los conceptos importantes del paradigma de objetos: </p>
+                <p>  <font size="+2"> Encapsulación: </font> Propiedad que permite ocultar la información al resto de los objetos, impidiendo así accesos incorrectos o conflictos. </p>
+                <p>  <font size="+2"> Herencia: </font> Propiedad a través de la cual los objetos heredan comportamiento dentro de una jerarquía de clases. </p>
+                <p>  <font size="+2"> Polimorfismo: </font> Propiedad de una operación mediante la cual puede ser aplicada a distintos tipos de objetos. </p>
+                <br> <h2> <li>  Estructura de una BD OO </li> </h2>
+                <p> El paradigma orientado a objetos se basa en el encapsulamiento de datos y  del código relacionado con cada objeto en una sola unidad. Conceptualmente, todas las interacciones entre cada objeto y el resto del sistema se realizan mediante mensajes. Por lo tanto, la interfaz entre cada objeto y el resto del sistema se define mediante un conjunto de mensajes permitidos. </p>
+               <br> 
+             <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','imagenes/bdoo2.jpg',1)"><img src="imagenes/bdoo1.jpg" width="253" height="199" id="Image3"></a> 
+             </div>
+          </div>
+
+          <div data-role="footer" align="center"  data-theme="b" data-position="fixed">
+             <div> 
+                  <img src="res/android/mdpi10.png" width="46" height="46" >
+             </div>
+                <h4> Aplicación 10, RGM </h4>               
+             </div>   
+            </div>
+            
+            
+         <div data-role="page" id="Pagina9" data-add-back-btn="true" data-theme="b">
+         <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1> <font size="+2"> Bases de datos en red </font> </h1>
+         </div>
+         <div data-role="content" align="center">
+             <div>
+                <p> Una base de datos de red esta conformada por una coleccion o set de registros, los cuales estan conectados entre si por medio de enlaces en una red. El registro es similar al de una entidad como las empleadas en el modelo relacional. </p>
+                 <p> Una estructura de datos en red, o estructura plex, es muy similar a una estructura jerárquica, de hecho no es más que un superconjunto de ésta. Al igual que en la estructura jerárquica, cada nodo puede tener varios hijos pero, a diferencia de ésta, también puede tener varios padres. </p>
+                 <p> El concepto básico en el enfoque de red es el conjunto (‘set’), definido por el comité CODASYL. Un conjunto está constituido por dos tipos de registros que mantienen una relación de muchos a muchos. Para conseguir representar este tipo de relación es necesario que los dos tipos de registros estén interconectados por medio de un registro conector llamado conjunto conector. Los conjuntos poseen las siguientes características: </p>
+                 <p> <li> El registro padre se denomina propietario del conjunto, mientras que el registro hijo se denomina miembro. </li> </p>
+                 <p> <li> Un conjunto está formado en un solo registro propietario y uno o más registros miembros. </li> </p>
+                 <p> <li>Una ocurrencia de conjuntos es una colección de registros, uno de ellos es el propietario y los otros los miembros. </li> </p>
+                 <p> <li> Todos los registros propietarios de ocurrencias del mismo tipo de conjunto deben ser del mismo tipo de registro.</li> </p>
+                 <p> <li> El tipo de registro propietario de un tipo de conjunto debe ser distinto de los tipos de los registros miembro. </li> </p>
+                 <p> <li> Sólo se permite que un registro miembro aparezca una vez en las ocurrencias de conjuntos del mismo tipo. </li> </p>
+                 <p> <li> Un registro miembro puede asociarse con más de un propietario, es decir, puede pertenecer al mismo tiempo a dos o más tipos de conjuntos distintos. Esta situación se puede representar por medio de una estructura multianillo. </li> </p>
+                  <p> <li>Se pueden definir niveles múltiples de jerarquías donde un tipo de registro puede ser miembro en un conjunto y al mismo tiempo propietario en otro conjunto diferente. </li> </p>
+                  <br> 
+            <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','imagenes/red2.gif',1)"><img src="imagenes/red1.jpeg" width="441" height="306" id="Image4"></a> </div>
+            </div>
+
+          <div data-role="footer" align="center"  data-theme="b" data-position="fixed">
+             <div> 
+                 <img src="res/android/mdpi10.png" width="46" height="46">
+             </div>
+                <h4> Aplicación 10, RGM </h4>
+               
+             </div>    
+            </div> 
+            
+            
+       <div data-role="page" id="Pagina10" data-add-back-btn="true" data-theme="b">
+         <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1> <font size="+2"> SQL </font> </h1>
+         </div>
+         <div data-role="content" align="center">
+             <div>
+                <p> SQL es un lenguaje de computación para trabajar con conjuntos de datos y las relaciones entre ellos. Los programas de bases de datos relacionales, como Microsoft Office Access, usan SQL para trabajar con datos. A diferencia de muchos lenguajes de computación, SQL no es difícil de leer y entender, incluso para un usuario inexperto. Al igual que muchos lenguajes de computación, SQL es un estándar internacional reconocido por organismos de estándares como ISO y ANSI. </p>
+                <br> <h2> <li> Instrucciones SELECT. </li> </h2>
+                <p> Para describir un conjunto de datos con SQL, se escribe una instrucción SELECT. Una instrucción SELECT contiene una descripción completa de un conjunto de datos que quiere obtener de una base de datos. Se incluye lo siguiente: </p>
+                <p> <li> Qué tablas contienen los datos </li> </p>
+                <p> <li> Cómo se relacionan los datos de orígenes diferentes. </li> </p>
+                <p> <li> Qué campos o cálculos proporcionarán los datos. </li> </p>
+                <p> <li> Criterios que los datos deben cumplir para ser incluidos. </li> </p>
+                <p> <li> Si se deben ordenar los datos y, en caso de ser así, cómo deben ordenarse.</li> </p>
+                <br> <h2> <li> Cláusulas SQL </li> </h2>
+                <p>  <font size="+2"> SELECT: </font> Muestra una lista de los campos que contienen datos de interés. Obligatorio.  </p>
+                <p>  <font size="+2"> FROM: </font> Muestra las tablas que contienen los campos de la cláusula SELECT. Obligatorio. </p>
+                <p>  <font size="+2"> WHERE: </font> Especifica los criterios de campo que cada registro debe cumplir para poder ser incluido en los resultados. </p>
+                <p>  <font size="+2"> ORDER BY: </font> Especifica la forma de ordenar los resultados. </p>
+                <p>  <font size="+2"> GROUP BY: </font> En una instrucción SQL que contiene funciones de agregado, muestra los campos que no se resumen en la cláusula SELECT. </p>
+                <p>  <font size="+2"> HAVING: </font> En una instrucción SQL que contiene funciones de agregado, especifica las condiciones que se aplican a los campos que se resumen en la instrucción SELECT. </p>
+                <br> 
+              <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','imagenes/archivo/a7.jpg',1)"><img src="imagenes/sql.jpg" width="348" height="145" id="Image5"></a>
+            </div>
+            
+             <div data-role="main" class="ui-content" >
+   <div data-role="collapsible" data-content-theme="false">
+     <h1> Mas sobre SQL </h1>
+     <div> 
+           <div data-role="main" class="ui-content" align="center">
+              <div style= "width:40%;">
+                <ul data-role="controlgroup" data-type="vertical" data-theme="b" >
+                  <li class="ui-first-child ui-last-child">
+                    <a href=
+                    "https://support.office.com/es-es/article/access-sql-conceptos-b%C3%A1sicos-vocabulario-y-sintaxis-444d0303-cde1-424e-9a74-e8dc3e460671" data-role="button">
+                       <h2>  Access SQL </h2>
+                    </a>
+                  </li> 
+                  <li lass="ui-first-child ui-last-child"> 
+                   <a href="https://es.khanacademy.org/computing/computer-programming/sql" data-role="button">
+                     <h2> Khan Academy-Introducción a SQL </h2>
+                    </a>
+               </li>
+               <li lass="ui-first-child ui-last-child"> 
+                   <a href="https://www.microsoft.com/es-mx/learning/sql-training.aspx" data-role="button">
+                     <h2> Cursos Microsoft SQL Server </h2>
+                    </a>
+               </li>
+             </ul>
+             </div>
+          </div> 
+        </div>
+        
+        
+        
+     </div>                     
+   </div>
+          <div data-role="footer" align="center"  data-theme="b" data-position="fixed">
+             <div> 
+                 <img src="res/android/mdpi10.png" width="46" height="46">
+             </div>
+                <h4> Aplicación 10, RGM </h4>
+              
+             </div>   
+            </div>             
+                          
+</body>
+</html>
+
